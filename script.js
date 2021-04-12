@@ -64,7 +64,7 @@ function searchPizza(e){
                                     <a class="pizza-traits-link" href="https://opensea.io/assets/0x4ae57798AEF4aF99eD03818f83d2d8AcA89952c7/${term}">OpenSea</a>     
                                 </div>
                                 <div class="pizza-namebase">
-                                    <h3>Bid on TLD:</h3>
+                                    <h3>Bid on .phb/:</h3>
                                     <a class="pizza-namebase-link" href="https://www.namebase.io/domains/phb">Namebase</a>     
                                 </div>
                                 
