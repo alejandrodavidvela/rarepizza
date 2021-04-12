@@ -1,17 +1,17 @@
 const search = document.getElementById('search');
 const submit = document.getElementById('submit');
 const random = document.getElementById('random');
-const chubbiesEl = document.getElementById('chubbies');
+const pizzasEl = document.getElementById('pizzas');
 const resultHeading = document.getElementById('result-heading');
-const single_chubbyEl = document.getElementById('single-chubby');
+const single_pizzaEl = document.getElementById('single-pizza');
 const get_age = document.getElementById('get-age');
 
 
-function searchChubby(e){
+function searchPizza(e){
     e.preventDefault();
 
-    // Clear Single Chubby
-    single_chubbyEl.innerHTML = '';
+    // Clear Single pizza
+    single_pizzaEl.innerHTML = '';
 
     // Get Search Term
     const term = search.value;
@@ -49,23 +49,23 @@ function searchChubby(e){
                         
                         
 
-                        chubbiesEl.innerHTML = data.assets.map(asset => `
-                            <div class="chubby">
-                                <img src="${asset.image_url}" alt="${asset.name}" />
-                                <div class="chubby-info" data-chubbyID="${asset.id}">
+                        pizzasEl.innerHTML = data.assets.map(asset => `
+                            <div class="pizza">
+                                <img class="pizza-img" src="${asset.image_url}" alt="${asset.name}" />
+                                <div class="pizza-info" data-pizzaID="${asset.id}">
                                     <h3>${asset.name}</h3>
                                 </div>
-                                <div class="chubby-owner">
+                                <div class="pizza-owner">
                                     <h3>Owner:</h3>
-                                    <a class="chubby-address" href="https://etherscan.io/address/${asset.owner.address}">${asset.owner.address}</a>
+                                    <a class="pizza-address" href="https://etherscan.io/address/${asset.owner.address}">${asset.owner.address}</a>
                                 </div>
-                                <div class="chubby-traits">
+                                <div class="pizza-traits">
                                     <h3>Bid on NFT:</h3>
-                                    <a class="chubby-traits-link" href="https://opensea.io/assets/0x4ae57798AEF4aF99eD03818f83d2d8AcA89952c7/${term}">OpenSea</a>     
+                                    <a class="pizza-traits-link" href="https://opensea.io/assets/0x4ae57798AEF4aF99eD03818f83d2d8AcA89952c7/${term}">OpenSea</a>     
                                 </div>
-                                <div class="chubby-namebase">
+                                <div class="pizza-namebase">
                                     <h3>Bid on TLD:</h3>
-                                    <a class="chubby-namebase-link" href="https://www.namebase.io/domains/phb">Namebase</a>     
+                                    <a class="pizza-namebase-link" href="https://www.namebase.io/domains/phb">Namebase</a>     
                                 </div>
                                 
     
@@ -76,7 +76,7 @@ function searchChubby(e){
                     search.value = '';
                 });
         }else{
-            alert('Please enter a Axie Number')
+            alert('Please enter a Pizza Number')
         }
     }
     
@@ -85,4 +85,4 @@ function searchChubby(e){
 
 
 // Event Listener
-submit.addEventListener('submit', searchChubby);
+submit.addEventListener('submit', searchPizza);

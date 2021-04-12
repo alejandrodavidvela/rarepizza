@@ -9,7 +9,7 @@ body {
     color: #fff;
     font-family: 'Press Start 2P', cursive;
 }
-.chubby {
+.pizza {
     max-width: 800px;
     margin-top: 20px;
 }
@@ -62,45 +62,45 @@ input[type="text"] {
 
 }
 
-.chubby-info {
+.pizza-info {
     margin: 20px;
     padding: 10px;
     border: 2px #970C0C dashed;
     border-radius: 5px;
 }
 
-.chubby-address {
+.pizza-address {
     font-size: 8px;
     color: #970C0C;
 }
 
-.chubby-traits {
+.pizza-traits {
     color: #fff; 
 }
 
-.chubby-traits-link {
+.pizza-traits-link {
     color: #970C0C;
 }
 
-.chubby-birthday-date {
+.pizza-birthday-date {
     color: #970C0C;
 }
 
-.chubby-title {
+.pizza-title {
     color: #970C0C;
     font-size: 25px;
 }
-.chubby-title-sub {
+.pizza-title-sub {
     color: #47250A;
     font-size: 10px;
 }
 
-.chubby-namebase {
+.pizza-namebase {
     color: #fff; 
     margin-bottom: 50px;
 }
 
-.chubby-namebase-link {
+.pizza-namebase-link {
     color: #970C0C;
 }
 
@@ -112,6 +112,9 @@ input[type="text"] {
 
 .handle-link {
     color: #fff;
+}
+.pizza-img {
+    max-width: 400px;
 }
 
 
